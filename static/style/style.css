@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    margin: 0;
+    background-color: #000000;
+     font-family: "Poppins", sans-serif;
+}
+
+header{
+    background-color: rgb(112, 121, 122);
+    padding: 1rem;
+    display: flex;
+    justify-content:space-between ;
+    /* justify-content:flex-end; */
+}
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.name h2 {
+    margin: 0;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.name h4 {
+    margin: 0;
+    font-size: 16px;
+    color: green;
+    font-style: italic;
+}
+.flag {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.search {
+padding: 0.5rem 1rem;
+border-radius: 50px;
+border: 2px solid #22254b;
+background-color: transparent;
+font-family: inherit;
+color: #dedede;
+font-size: 1rem;
+/* justify-content: flex-start; */
+align-content: flex-end;
+}
+
+.search::placeholder{
+    color: #ebebee;
+}
+
+.search:focus{
+    outline: none;
+    background-color: #060608;
+}
+
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+.movie{
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    width: 300px;
+    background-color: #2a2835;
+    margin: 1rem;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.movie img{
+ width: 100%;
+   
+}
+
+.movie-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    color: rgb(86, 185, 104);
+    letter-spacing: 0.5px;
+    align-items: center;
+}
+
+.movie-info h3{
+    margin: 0;
+}
+
+.movie-info span{
+    background-color: #22254b;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.movie-info span.green{
+    color: rgb(46, 194, 46);
+}
+.movie-info span.orange{
+ color: rgb(231, 197, 133);
+}
+.movie-info span.red{
+    color: red;
+
+}
+.movie-info .rating {
+    background-color: #22254b;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.movie-info .rating.green {
+    color: rgb(46, 194, 46);
+}
+
+.movie-info .rating.orange {
+    color: rgb(231, 197, 133);
+}
+
+.movie-info .rating.red {
+    color: red;
+}
+
+
+.movie .overview {
+    transition: none;
+    display: none;
+}
+.movie.clicked .overview {
+    display: block;
+}
+
+
+/* Add hover effect to the "Add Review" button */
+.movie .add-review-btn:hover {
+    background-color: #333366;
+}
+/* Add some styling to the "Add Review" button */
+.movie .add-review-btn {
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding */
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 16px; /* Increase font size */
+    transition: background-color 0.3s; 
+    /* Add transition effect */
+}
+
+/* Add hover effect to the "Add Review" button */
+.movie .add-review-btn:hover {
+    background-color: #235c26; /* Darker green on hover */
+}
+
+
+.movie:hover .overview{
+    transform: translateY(0);
+    background-color: #235c26;
+
+}
+
+.overview h4{
+    margin-top: 0;
+}
+header.logoo {
+    /* background-image: url('static/images/headerpic.png'); */
+    background-color: #0e1936;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.logo h2 {
+    font-size: 18px;
+    color: #666666;
+}
+
+.search {
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+header {
+    background-color: #161a18; /* Adjust background color as needed */
+    padding: 5px;
+    text-align: center;
+}
+.small-header {
+    height: 30px; /* Adjust the height of the header as needed */
+    /* Add any other styles for the header here */
+}
+.logo-container {
+    display: inline-block; /* Ensures logo and company info align properly */
+}
+
+.logo {
+    width: 120px; /* Adjust logo width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.company-info {
+    display: inline-block;
+    vertical-align: middle;
+    
+    margin-left: 20px; /* Adjust margin between logo and company info */
+}
+
+h1, h2 {
+    margin: 0; /* Remove default margin */
+    color: #d3e0db; /* Adjust text color as needed */
+}
+
+h1 {
+    /* font-family:'Playfair Display', serif; */
+    /* font-family: 'Lobster', cursive; */
+    /* font-family: 'Sacramento', cursive; */
+    /* color: rgb(125, 9, 9); */
+    color: #ffffffda;
+    /* color: rgb(194, 190, 190); */
+    font-size: 50px; /* Adjust font size as needed */
+    font-weight: bold; /* Adjust font weight as needed */
+}
+
+h2 {
+    color: silver;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-size: 18px; /* Adjust font size as needed */
+}
+
+/* CSS code to style the modal overlay */
+/* CSS for modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px; /* Location of the box */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Default styling for movie name and rating */
+.movie-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.685);
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    box-sizing: border-box;
+    transition: opacity 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Hide movie name and rating by default */
+/* .movie:hover .movie-info {
+    opacity: 0;
+} */
+
+/* Styling for "Add Review" and "Overview" buttons */
+.add-review-btn,
+.overview-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Show buttons on hover */
+/* .movie:hover .add-review-btn,
+.movie:hover .overview-btn {
+    opacity: 1;
+} */
+/* Styling for "Add Review" and "Overview" buttons */
+.add-review-btn,
+.overview-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Show buttons on hover */
+/* .movie:hover .add-review-btn,
+.movie:hover .overview-btn {
+    opacity: 1;
+} */
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #f9f3f3;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Close Button on Hover */
+.close:hover {
+    color: black;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333; /* Adjust background color as needed */
+    color: white; /* Text color */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px; /* Adjust spacing between menu items */
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white; /* Text color */
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: lightgrey; /* Hover color */
+}

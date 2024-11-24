@@ -1,0 +1,55 @@
+/* Store this code in 'style.css' file inside the 'static' folder*/
+
+.header{
+    padding: 5px 120px;
+    width: 150px;
+    height: 70px;
+    background-color: silver; 
+    color:rgb(175, 175, 175);
+}
+
+.border{
+    padding: 80px 50px;
+    width: 400px;
+    height: 450px;
+    border: 1px solid #39d465;
+    border-radius: 0px;
+    /* background-image: url('static/images/login.jpg'); */
+    background-color: #1e251f;
+}
+
+.btn {
+    padding: 10px 40px;
+    background-color: rgb(13, 13, 14); 
+    color: white;
+    font-style: oblique;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.textbox{
+    padding: 10px 40px;
+    background-color: silver; 
+    color:black;
+    border-radius: 10px;
+}
+    
+::placeholder {
+    color: black;
+    opacity: 1;
+    /* background-color: black; */
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.word{
+    color: #030502;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.bottom{
+    color: gold;
+    font-style: oblique;
+    font-weight: bold;
+}

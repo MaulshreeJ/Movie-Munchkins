@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/stylelogin.css') }}">
+
+</head>
+<body>
+    <header class="logoo" style="background-image: url('/static/images/headerpic14.jpg');">
+        <div class="logo-container">
+            <img src="static\images\logo2.jpg" alt="Company Logo" class="logo">
+        </div>
+        <div class="company-info">
+            <h1>Movie Munchkins</h1>
+            <!-- <br> -->
+            <h2>Your Bite-Sized Guide to Movie Magic!</h2>
+        </div>
+    </header>
+    <header class="navbar">
+        <!-- <div class="name small-header">
+            <img src="static/images/indian_flag.png" alt="Indian Flag" class="flag">
+            <h3>Maulshree</h3>
+            <h4>(Account active)</h4> -->
+        <!-- </div> -->
+            <nav>
+                <ul>
+                    <li><a href="/index">Home</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                    <!-- Add more links for other pages -->
+                </ul>
+            </nav>
+        
+        
+        
+        <form id="form">
+            <input type="text" autocomplete="off" id="search" placeholder="Search" class="search">
+        </form>
+    </header>
+    
+    <main id="main">
+        <!-- Movie templates will be displayed here -->
+    </main>
+
+    <!-- JS script -->
+    <script src="{{url_for('static', filename='js/app.js')}}"></script>
+</body>
+</html>
